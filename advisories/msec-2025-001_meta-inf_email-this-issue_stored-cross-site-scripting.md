@@ -76,6 +76,7 @@ Version `9.13.0-GA` of Email This Issue fixes the mentioned stored cross-site vu
 | 20.05.2025 | Advisory Release | None |
 
 ## 8. References
+- [https://github.com/migros/migros-security-advisories/](https://github.com/migros/migros-security-advisories/)
 - [https://datatracker.ietf.org/doc/html/rfc5233](https://datatracker.ietf.org/doc/html/rfc5233)
 - [https://modzero.com/en/blog/beyond_the_at_symbol/](https://modzero.com/en/blog/beyond_the_at_symbol/)
 - [https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions](https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions)
