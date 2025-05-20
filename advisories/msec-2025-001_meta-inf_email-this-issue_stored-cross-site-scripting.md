@@ -31,6 +31,8 @@ Special characters are not properly sanitized or output-encoded by Email This Is
 
 
 ## 2. Details
+An e-mail address is made up of a local part and a domain part. According to `RFC 5233`, special characters are also allowed in the local part. When rendering e-mails and their related metadata (like e-mail addresses, date sent, subject, etc.) in a rich context (e.g., a website), it is important that potential special characters are neutralized in a suitable fashion through escaping or output-encoding appropriate for the target context (e.g., HTML). A stored cross-site scripting vulnerability was found in the Jira App "Email This Issue" by META-INF as it fails to neutralize special characters in e-mail addresses. Fields containing e-mail addresses are not processed through escaping or encoding and can thus contain HTML or script content, which then gets rendered by user agents (browsers) when displaying e-mails consumed by the Email This Issue Jira plug-in.
+
 The local part is not validated properly and is interpreted as HTML or script code by the application.
 
 Steps to reproduce:

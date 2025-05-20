@@ -11,5 +11,5 @@ Below you find a curated list of security advisories published by the Security O
 ![Vulnerability Disclosure Process](process.png)
 
 ## Contact
-Please contact [damiano.esposito@mgb.ch](mailto:damiano.esposito@mgb.ch) for issues relating to this repository. For press inquiries, please contact [media@migros.ch](mailto:media@migros.ch).
+Please contact [damiano.esposito@mgb.ch](mailto:damiano.esposito@mgb.ch) for issues relating to this repository. Please contact [media@migros.ch](mailto:media@migros.ch) for press inquiries.
 

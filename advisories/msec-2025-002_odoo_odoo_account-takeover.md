@@ -27,30 +27,33 @@ This is a security advisory published by the Security Operations / Cyber Defense
 8. Disclaimer
 
 ## 1. Summary
-Improper access control in the auth_oauth module of Odoo Community 15.0 and Odoo Enterprise 15.0 allows an internal user to export the OAuth tokens of other users.
-Non-privileged users can access other users' OAuth access tokens in Odoo 15 (and possibly earlier) by using the Export feature of Odoo. They can then use these looted OAuth access tokens to log into the user accounts that the token belongs to. This vulnerability allows for horizontal and vertical privilege escalation.
+Improper access control in the auth_oauth module of `Odoo Community 15.0` and `Odoo Enterprise 15.0` allows an internal user to export the OAuth tokens of other users. Non-privileged users can access other users' OAuth access tokens in `Odoo 15` (and possibly earlier) by using the Export feature of Odoo. They can then use these looted OAuth access tokens to log into the user accounts that the token belongs to.
+This vulnerability allows for horizontal and vertical privilege escalation.
 
 
 ## 2. Details
-- "Log in with a regular user account (regular meaning: no global admin privileges, i.e. neither Administration=Access rights or Administration=Settings under the 'Administration' section in the user configuration)"
-- "Either guess the correct action ID for the User model list view or, if known, directly browse to it. A valid URL looks, for example, like this: https://67085569-15-0-all.runbot183.odoo.com/web#cids=1&menu_id=4&action=72&model=res.users&view_type=list"
-- Select all users with the check boxes
-- Click on Action > Export
-- Select the OAuth access token field to be included in the export
-- Download the export
-- Open the export file to receive the OAuth access tokens
-- Use the stolen tokens to log in using the OAuth endpoint at /auth_oauth/signin
+It is possible for regular users (i.e. users that neither have `Admin=Access rights` nor `Admin=Settings` set) to dump the OAuth access tokens of all other users using the `Export` feature. Thus, the only prerequirements to this attack are that a) an account on an Odoo instance/installation is present, and b) that the `Export` feature is enabled (which it is for all users by default after user account creation). The OAuth access token is present as a field in the User base model. As Odoo uses the `OAuth 2.0 Implicit Flow/Grant` for OAuth-supported login, it is thus possible to impersonate other users by passing their access tokens to the authentication endpoint at `/auth_oauth/signin` after dumping them. This allows any party with a user account on an `Odoo 15` (and possibly earlier, as long as OAuth login is supported) instance to impersonate any other user that uses OAuth for authentication. As the OAuth access tokens in the database often have a short expiration period, an attacker can either impersonate only recently authenticated users, or may repeatedly dump the User model through the `Export` feature until a valuable user's (e.g. an administrator's) recent OAuth access token appears in it, or may trick a valuable user into logging into the instance through social engineering and then dump their OAuth access token. While the User model list view is not shown to regular users (as it is usually in the Settings app, which is also not shown to non-administrator users), it is possible to reach it via deep browsing to the User model list view. If said list view's link is not known to an attacker, it can be easily guessed by iterating through numerical IDs called `action`. For example, the following is a valid link to the User model list view on an Odoo instance: `https://67085569-15-0-all.runbot183.odoo.com/web#cids=1&menu_id=4&action=72&model=res.users&view_type=list`, where the action would need to be guessed. In our tests it was usually between `1` and `100`. After dumping the OAuth access tokens using the Export feature on the User model list view, other users' accounts can then be taken over by passing a still-valid OAuth access token to the OAuth login endpoint at `/auth_oauth/signin`.
+
+1. Log in with a regular user account (regular meaning: no global admin privileges, i.e. neither `Administration=Access rights` or `Administration=Settings` under the `Administration` section in the user configuration).
+2. Either guess the correct action ID for the User model list view or, if known, directly browse to it.
+   * A valid URL looks like this: `https://67085569-15-0-all.runbot183.odoo.com/web#cids=1&menu_id=4&action=72&model=res.users&view_type=list`
+3. Select all users with the check boxes.
+4. Click on `Action` > `Export`.
+5. Select the OAuth access token field to be included in the export.
+6. Download the export.
+7. Open the export file to receive the OAuth access tokens.
+8. Use the stolen tokens to log in using the OAuth endpoint at `/auth_oauth/signin`.
 
 
 ## 3. Workaround and Fix
 The following chapter describes how the reported vulnerability can be mitigated (e.g., using a workaround) and if available sustainably fixed.
 ### Workaround
-Disable OAuth login for your Odoo installation and/or all users
+Disable OAuth login for your Odoo installation and/or all users.
 
 
 ### Fix
 - Do not allow the OAuth Implicit Flow for login. Use something that is more secure.
-- Protect the OAuth Access Token field in all affected versions against being read, also during Export.
+- Protect the OAuth Access Token field in all affected versions against being read, also during export.
 - Consider not storing the OAuth Access Token at all after successful authentication, if possible.
 
 
