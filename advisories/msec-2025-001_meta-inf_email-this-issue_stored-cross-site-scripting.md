@@ -60,11 +60,11 @@ Version `9.13.0-GA` of Email This Issue fixes the mentioned stored cross-site vu
 
 
 
-## 6. Credits
+## 4. Credits
 - Antonio Kulhanek, MGB (Migros-Genossenschafts-Bund)
 - Damiano Esposito, MGB (Migros-Genossenschafts-Bund)
 
-## 7. Timeline
+## 5. Timeline
 | Date | Process | Comments |
 | --- | --- | --- |
 | 17.06.2024 | Vulnerability Discovery | None |
@@ -77,18 +77,18 @@ Version `9.13.0-GA` of Email This Issue fixes the mentioned stored cross-site vu
 | 01.08.2024 | CVE-ID Request | None |
 | 20.05.2025 | Advisory Release | None |
 
-## 8. References
+## 6. References
 - [https://github.com/migros/migros-security-advisories/](https://github.com/migros/migros-security-advisories/)
 - [https://datatracker.ietf.org/doc/html/rfc5233](https://datatracker.ietf.org/doc/html/rfc5233)
 - [https://modzero.com/en/blog/beyond_the_at_symbol/](https://modzero.com/en/blog/beyond_the_at_symbol/)
 - [https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions](https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions)
 - [https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 
-## 9. About Us
+## 7. About Us
 The MGB (Migros-Genossenschafts-Bund) is the central service company of the Migros Group and offers around 350 different functions. For this reason, we are always on the lookout for specialists from a wide range of fields. You can find us on [jobs.migros.ch](https://migros-gruppe.jobs/de/unsere-unternehmen/migros-gruppe/offene-stellen?q=cyber).
 
 
-## 10. Disclaimer
+## 8. Disclaimer
 The MGB (Migros-Genossenschafts-Bund) works with suppliers to mitigate identified vulnerabilities as best as possible. The publication of vulnerabilities without the availability of a suitable corrective measure (patch) is not the goal of the MGB. The full disclosure of a vulnerability is only used by MGB in exceptional cases. The protection of the Migros community, especially those who are in a contractual relationship, must be guaranteed in any case and MGB will act in their interests.
 
 
