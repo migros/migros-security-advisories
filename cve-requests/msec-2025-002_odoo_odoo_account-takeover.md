@@ -1,12 +1,12 @@
 # Migros Security Advisory
 This is a security advisory published by the Security Operations / Cyber Defense Center team of MGB (Migros-Genossenschafts-Bund) found during penetration tests or red team engagements.
 
-## Odoo 15 (and possibly earlier) - Authenticated account takeover
+## Odoo 15 (and possibly earlier) - Authenticated Account Takeover
 | Key | Value |
 | --- | --- |
 | Vendor | Odoo |
 | Product | Odoo |
-| Vulnerability | Read access to OAuth access tokens and account takeover |
+| Vulnerability | Authenticated Account Takeover |
 | Affected Versions | 15 |
 | URL | [https://www.odoo.com/](https://www.odoo.com/) |
 | CVSS 4.0 | 8.7 |
