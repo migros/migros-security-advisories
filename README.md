@@ -5,12 +5,15 @@ Below you find a curated list of security advisories published by the Security O
 The table below provides a summary of all published advisories, including key details such as dates, identifiers, severity scores, affected vendors, and products.
 | Date | MSEC ID | Vendor ID | CVE ID | CVSS 4.0 | Vendor | Product | Vulnerability | Advisory |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 20.05.2025 | MSEC-2025-001 | None | CVE-2024-42912 | 8.6 | META-INF | Email This Issue | Stored Cross-Site Scripting | [Open](advisories/msec-2025-001_meta-inf_email-this-issue_stored-cross-site-scripting.md) |
+| 20.05.2025 | MSEC-2025-001 | n/a | CVE-2024-42912 | 8.6 | META-INF | Email This Issue | Stored Cross-Site Scripting | [Open](advisories/msec-2025-001_meta-inf_email-this-issue_stored-cross-site-scripting.md) |
 | 20.05.2025 | MSEC-2025-002 | ODOO-SA-2024-12-23 | CVE-2024-12368 | 8.7 | Odoo | Odoo | Authenticated Account Takeover | [Open](advisories/msec-2025-002_odoo_odoo_account-takeover.md) |
+| 04.06.2025 | MSEC-2025-003 | n/a | Pending | 10.0 | WF Steuerungstechnik GmbH | airleader MASTER | Authentication Bypass | [Open](advisories/msec-2025-003_wf-seuerungstechnik-gmbh_airleader-master_authentication-bypass.md) |
+| 04.06.2025 | MSEC-2025-004 | n/a | Pending | 9.2 | WF Steuerungstechnik GmbH | airleader MASTER | Path Traversal | [Open](advisories/msec-2025-004_wf-seuerungstechnik-gmbh_airleader-master_path-traversal.md) |
 
 ## Vulnerability Disclosure Process
 The following figure illustrates the underlying vulnerability disclosure process, outlining the steps for reporting, managing, and resolving security vulnerabilities responsibly.
 ![Vulnerability Disclosure Process](process.png)
+The figure represents a reference process that serves as a foundational guideline. It can be adapted or modified as needed to ensure responsible and context-appropriate publication.
 
 ## Contact
 Please contact [damiano.esposito@mgb.ch](mailto:damiano.esposito@mgb.ch) for issues relating to this repository. Please contact [media@migros.ch](mailto:media@migros.ch) for press inquiries.
