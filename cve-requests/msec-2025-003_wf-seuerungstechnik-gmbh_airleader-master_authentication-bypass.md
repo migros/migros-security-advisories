@@ -14,7 +14,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CAPEC | CAPEC-115 |
 | MSEC ID | MSEC-2025-003 |
 | Vendor ID | n/a |
-| CVE ID | Pending |
+| CVE ID | CVE-2025-5597 |
 
 ## Table of Contents
 1. Summary
