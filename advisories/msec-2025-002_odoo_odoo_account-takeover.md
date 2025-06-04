@@ -75,6 +75,7 @@ Disable OAuth login for your Odoo installation and/or all users.
 | 20.05.2025 | Advisory Release | This advisory (MSEC-2025-002) published by Migros-Genossenschafts-Bund (MGB). |
 
 ## 6. References
+- [https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-002_odoo_odoo_account-takeover.md](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-002_odoo_odoo_account-takeover.md)
 - [https://github.com/migros/migros-security-advisories/](https://github.com/migros/migros-security-advisories/)
 - [https://www.odoo.com/](https://www.odoo.com/)
 
