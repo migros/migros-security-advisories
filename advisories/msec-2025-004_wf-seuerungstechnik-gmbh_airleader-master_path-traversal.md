@@ -1,0 +1,81 @@
+# Migros Security Advisory
+This is a security advisory published by the Security Operations / Cyber Defense Center team of MGB (Migros-Genossenschafts-Bund) found during penetration tests or red team engagements.
+
+## WF Steuerungstechnik GmbH - airleader MASTER - Path Traversal
+| Key | Value |
+| --- | --- |
+| Vendor | WF Steuerungstechnik GmbH |
+| Product | airleader MASTER |
+| Vulnerability | Path Traversal |
+| Affected Versions | 3.0046 |
+| URL | [https://www.airleader.de/produkte/steuerungen/](https://www.airleader.de/produkte/steuerungen/) |
+| CVSS 4.0 | 9.2 |
+| CWE | CWE-35 |
+| CAPEC | CAPEC-37 |
+| MSEC ID | MSEC-2025-004 |
+| Vendor ID | n/a |
+| CVE ID | Pending |
+
+## Table of Contents
+1. Summary
+2. Details
+3. Workaround and Fix
+4. Credits
+5. Timeline
+6. References
+7. About Us
+8. Disclaimer
+
+## 1. Summary
+Airleader MASTER is a control system for compressors. It is possible to read arbitrary files on the remote host outside the web server's document directory using a specially crafted URL. An unauthenticated attacker may be able to exploit this issue to access sensitive information which could be used in subsequent attacks.
+
+
+## 2. Details
+Further information will follow with a full disclosure.
+
+The following GET request allows to download arbitrary files from the server:
+```
+GET /../../../../../../../../../../../../etc/passwd HTTP/1.1
+[...]
+```
+
+
+## 3. Workaround and Fix
+The following chapter describes how the reported vulnerability can be mitigated (e.g., using a workaround) and if available sustainably fixed.
+### Workaround
+n/a
+
+
+### Fix
+Version number `3.0057` fixes the path traversal vulnarability.
+
+
+
+## 4. Credits
+- Antonio Kulhanek, MGB (Migros-Genossenschafts-Bund)
+- Damiano Esposito, MGB (Migros-Genossenschafts-Bund)
+
+## 5. Timeline
+| Date | Process | Comments |
+| --- | --- | --- |
+| 19.12.2022 | Vulnerability Discovery | n/a |
+| 07.02.2023 | Vendor Notification | n/a |
+| 08.02.2023 | Vendor Receipt | n/a |
+| 09.02.2023 | Vendor Validation | n/a |
+| 21.04.2023 | Vendor Resolution | n/a |
+| 04.06.2025 | CVE Request | n/a |
+| 04.06.2025 | Advisory Release | n/a |
+
+## 6. References
+- [https://github.com/migros/migros-security-advisories/](https://github.com/migros/migros-security-advisories/)
+- [https://www.airleader.de/produkte/steuerungen/](https://www.airleader.de/produkte/steuerungen/)
+- [https://github.com/migros/security-advisories](https://github.com/migros/security-advisories)
+
+## 7. About Us
+The MGB (Migros-Genossenschafts-Bund) is the central service company of the Migros Group and offers around 350 different functions. For this reason, we are always on the lookout for specialists from a wide range of fields. You can find us on [jobs.migros.ch](https://migros-gruppe.jobs/de/unsere-unternehmen/migros-gruppe/offene-stellen?q=cyber).
+
+
+## 8. Disclaimer
+The MGB (Migros-Genossenschafts-Bund) works with suppliers to mitigate identified vulnerabilities as best as possible. The publication of vulnerabilities without the availability of a suitable corrective measure (patch) is not the goal of the MGB. The full disclosure of a vulnerability is only used by MGB in exceptional cases. The protection of the Migros community, especially those who are in a contractual relationship, must be guaranteed in any case and MGB will act in their interests.
+
+
