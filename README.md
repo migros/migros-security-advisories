@@ -9,6 +9,7 @@ The table below provides a summary of all published advisories, including key de
 | 20.05.2025 | MSEC-2025-002 | ODOO-SA-2024-12-23 | CVE-2024-12368 | 8.7 | Odoo | Odoo | Authenticated Account Takeover | [Open](advisories/msec-2025-002_odoo_odoo_account-takeover.md) |
 | 04.06.2025 | MSEC-2025-003 | n/a | CVE-2025-5597 | 10.0 | WF Steuerungstechnik GmbH | airleader MASTER | Authentication Bypass | [Open](advisories/msec-2025-003_wf-seuerungstechnik-gmbh_airleader-master_authentication-bypass.md) |
 | 04.06.2025 | MSEC-2025-004 | n/a | CVE-2025-5598 | 9.2 | WF Steuerungstechnik GmbH | airleader MASTER | Path Traversal | [Open](advisories/msec-2025-004_wf-seuerungstechnik-gmbh_airleader-master_path-traversal.md) |
+| 26.06.2025 | MSEC-2025-005 | n/a | Pending | 8.6 | SYDECON GmbH | MDM Enterprise Workflow | Stored Cross-Site Scripting | [Open](advisories/msec-2025-005_sydecon-gmbh_mdm-enterprise_stored-cross-site-scripting.md) |
 
 ## Vulnerability Disclosure Process
 The following figure illustrates the underlying vulnerability disclosure process, outlining the steps for reporting, managing, and resolving security vulnerabilities responsibly.
