@@ -84,6 +84,7 @@ Version `9.13.0-GA` of Email This Issue fixes the mentioned stored cross-site vu
 - [https://modzero.com/en/blog/beyond_the_at_symbol/](https://modzero.com/en/blog/beyond_the_at_symbol/)
 - [https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions](https://marketplace.atlassian.com/apps/4977/email-this-issue?hosting=datacenter&tab=versions)
 - [https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [https://docs.meta-inf.hu/email-this-issue/email-this-issue-for-jira-server-data-center/misc/security-advisories/email-this-issue-security-advisory-2025-06-30](https://docs.meta-inf.hu/email-this-issue/email-this-issue-for-jira-server-data-center/misc/security-advisories/email-this-issue-security-advisory-2025-06-30)
 
 ## 7. About Us
 The MGB (Migros-Genossenschafts-Bund) is the central service company of the Migros Group and offers around 350 different functions. For this reason, we are always on the lookout for specialists from a wide range of fields. You can find us on [jobs.migros.ch](https://migros-gruppe.jobs/de/unsere-unternehmen/migros-gruppe/offene-stellen?q=cyber).
