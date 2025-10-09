@@ -1,4 +1,6 @@
 # Migros Security Advisories
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
 Below you find a curated list of security advisories published by the Security Operations / Cyber Defense Center team of MGB (Migros-Genossenschafts-Bund) found during penetration tests or red team engagements.
 
 ## Overview
@@ -15,6 +17,15 @@ The table below provides a summary of all published advisories, including key de
 The following figure illustrates the underlying vulnerability disclosure process, outlining the steps for reporting, managing, and resolving security vulnerabilities responsibly.
 ![Vulnerability Disclosure Process](process.png)
 The figure represents a reference process that serves as a foundational guideline. It can be adapted or modified as needed to ensure responsible and context-appropriate publication.
+
+## License
+This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by] (CC BY 4.0).
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg.
 
 ## Contact
 Please contact [damiano.esposito@mgb.ch](mailto:damiano.esposito@mgb.ch) for issues relating to this repository. Please contact [media@migros.ch](mailto:media@migros.ch) for press inquiries.
