@@ -1,6 +1,4 @@
 # Migros Security Advisories
-[![CC BY 4.0][cc-by-shield]][cc-by]
-
 Below you find a curated list of security advisories published by the Security Operations / Cyber Defense Center team of MGB (Migros-Genossenschafts-Bund) found during penetration tests or red team engagements.
 
 ## Overview
