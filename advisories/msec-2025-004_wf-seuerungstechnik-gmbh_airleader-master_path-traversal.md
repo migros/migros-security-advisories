@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 9.2 |
 | CWE | CWE-35 |
 | CAPEC | CAPEC-37 |
-| MSEC ID | MSEC-2025-004 |
+| MSEC ID | [MSEC-2025-004](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-004_wf-seuerungstechnik-gmbh_airleader-master_path-traversal.md) |
 | Vendor ID | n/a |
 | CVE ID | CVE-2025-5598 |
 

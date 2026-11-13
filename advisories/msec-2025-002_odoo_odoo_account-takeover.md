@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 8.7 |
 | CWE | CWE-200 |
 | CAPEC | CAPEC-87, CAPEC-233 |
-| MSEC ID | MSEC-2025-002 |
+| MSEC ID | [MSEC-2025-002](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-002_odoo_odoo_account-takeover.md) |
 | Vendor ID | ODOO-SA-2024-12-23 |
 | CVE ID | CVE-2024-12368 |
 

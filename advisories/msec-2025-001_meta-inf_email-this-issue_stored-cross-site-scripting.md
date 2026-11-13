@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 8.6 |
 | CWE | CWE-79 |
 | CAPEC | CAPEC-63, CAPEC-592 |
-| MSEC ID | MSEC-2025-001 |
+| MSEC ID | [MSEC-2025-001](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-001_meta-inf_email-this-issue_stored-cross-site-scripting.md) |
 | Vendor ID | n/a |
 | CVE ID | CVE-2024-42912 |
 

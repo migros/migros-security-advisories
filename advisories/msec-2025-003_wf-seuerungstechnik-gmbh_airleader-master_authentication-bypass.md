@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 10.0 |
 | CWE | CWE-287 |
 | CAPEC | CAPEC-115 |
-| MSEC ID | MSEC-2025-003 |
+| MSEC ID | [MSEC-2025-003](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2025-003_wf-seuerungstechnik-gmbh_airleader-master_authentication-bypass.md) |
 | Vendor ID | n/a |
 | CVE ID | CVE-2025-5597 |
 

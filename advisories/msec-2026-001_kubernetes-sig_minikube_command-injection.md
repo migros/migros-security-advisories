@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 6.2 |
 | CWE | CWE-78 |
 | CAPEC | CAPEC-88, CAPEC-242 |
-| MSEC ID | MSEC-2026-001 |
+| MSEC ID | [MSEC-2026-001](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2026-001_kubernetes-sig_minikube_command-injection.md) |
 | Vendor ID | 3423233 (HackerOne) |
 | CVE ID | Pending |
 

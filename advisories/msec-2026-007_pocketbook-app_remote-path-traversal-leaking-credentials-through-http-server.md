@@ -12,7 +12,7 @@ This is a security advisory published by the Security Operations / Cyber Defense
 | CVSS 4.0 | 8.3 |
 | CWE | CWE-22 |
 | CAPEC | CWE-200 |
-| MSEC ID | MSEC-2026-007 |
+| MSEC ID | [MSEC-2026-007](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2026-007_pocketbook-app_remote-path-traversal-leaking-credentials-through-http-server.md) |
 | Vendor ID | Pending |
 | CVE ID | CVE-2026-119726 |
 
@@ -220,6 +220,7 @@ The vendor should apply the following fixes:
 | 13-11-2026 | Advisory Release | Advisory released by Migros to GitHub |
 
 ## 6. References
+- [https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2026-007_pocketbook-app_remote-path-traversal-leaking-credentials-through-http-server.md](https://github.com/migros/migros-security-advisories/blob/main/advisories/msec-2026-007_pocketbook-app_remote-path-traversal-leaking-credentials-through-http-server.md)
 - [https://play.google.com/store/apps/details?id=com.obreey.reader](https://play.google.com/store/apps/details?id=com.obreey.reader)
 
 ## 7. About Us
